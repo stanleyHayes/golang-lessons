@@ -5,16 +5,14 @@ import (
 )
 
 func main() {
-	var age int64
-	age = 27
+	//////////////////////////////////////////////
+	//short declaration
+	occupation := "Teaching"
+	fmt.Println(occupation)
+	fmt.Printf("Type of %s is %T\n", occupation, occupation)
 
-	var isEmployed bool
-	isEmployed = true
-	fmt.Printf("Are you employed ? %t", isEmployed)
-
-	fmt.Print(age)
-	var message = "Hello, Playground"
-	var greeting, name = "Welcome", "Stanley"
-	fmt.Println(message)
-	fmt.Println(greeting, name)
+	//use short declaration in loops e.g. for loops
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+	}
 }
